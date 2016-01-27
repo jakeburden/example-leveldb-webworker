@@ -1,7 +1,7 @@
 module.exports = self => {
   const level = require('level')
   const db = level('db')
-  const state = require('./state.json')
+  const state = require('./initState.js')
 
   self.onmessage = ({data: {type, payload}}) => {
 
