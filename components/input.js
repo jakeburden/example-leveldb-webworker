@@ -10,7 +10,7 @@ module.exports = worker => hx`
         if (todo) {
           worker.postMessage({
             type: 'addTodo',
-            payload: e.target.value
+            payload: todo
           })
           e.target.value = ''
         }
